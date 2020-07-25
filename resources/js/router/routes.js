@@ -2,7 +2,7 @@ import MainLayout from '@/layout/MainLayout'
 import BlankLayout from '@/layout/BlankLayout'
 
 import Home from '@/views/Home'
-
+import BookSearch from '@/views/book/Search'
 
 export default [
   {
@@ -14,6 +14,18 @@ export default [
         path: '/',
         name: 'home',
         component: Home
+      }
+    ]
+  },
+  {
+    path: '/book',
+    name: 'blank',
+    component: MainLayout,
+    children: [
+      {
+        path: 'search',
+        name: 'book.search',
+        component: BookSearch
       }
     ]
   }

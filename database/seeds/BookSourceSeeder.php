@@ -27,14 +27,15 @@ class BookSourceSeeder extends Seeder
                 'search_url_rule' => 'td:eq(0) a@href',
 
                 'detail_name_rule' => '#info h1@text',
+                'detail_author_rule' => '#info p:eq(0)@text',
                 'detail_cover_rule' => '#fmimg img@src',
                 'detail_category_rule' => '#wrapper .con_top a:eq(1)@text',
                 'detail_new_chapter_rule' => '#list dl dd:eq(0) a@text',
-                'detail_description_rule' => '#intro p:eq(0)@html',
+                'detail_description_rule' => '#intro@html@-p:eq(2)',
 
-                'chapter_rule' => '#list',
-                'chapter_name_rule' => 'dt:eq(1)~dd@text',
-                'chapter_url_rule' => 'dt:eq(1)~dd@href',
+                'chapter_rule' => '#list dd:gt(8)',
+                'chapter_name_rule' => 'a@text',
+                'chapter_url_rule' => 'a@href',
 
                 'content_name_rule' => '.bookname h1@text',
                 'content_text_rule' => '#content@html',
@@ -55,14 +56,15 @@ class BookSourceSeeder extends Seeder
                 'search_url_rule' => 'td:eq(0) a@href',
 
                 'detail_name_rule' => '#info h1@text',
+                'detail_author_rule' => '#info p:eq(0)@text',
                 'detail_cover_rule' => '#fmimg img@src',
                 'detail_category_rule' => '#wrapper .con_top a:eq(1)@text',
                 'detail_new_chapter_rule' => '#list dl dd:eq(0) a@text',
-                'detail_description_rule' => '#intro p:eq(0)@html',
+                'detail_description_rule' => '#intro@html@-p:eq(2)',
 
-                'chapter_rule' => '#list',
-                'chapter_name_rule' => 'dt:eq(1)~dd@text',
-                'chapter_url_rule' => 'dt:eq(1)~dd@href',
+                'chapter_rule' => '#list dd:gt(8)',
+                'chapter_name_rule' => 'a@text',
+                'chapter_url_rule' => 'a@href',
 
                 'content_name_rule' => '.bookname h1@text',
                 'content_text_rule' => '#content@html',
@@ -83,14 +85,15 @@ class BookSourceSeeder extends Seeder
                 'search_url_rule' => 'dt a@href',
 
                 'detail_name_rule' => '#info h1@text',
+                'detail_author_rule' => '#info p:eq(0)@text',
                 'detail_cover_rule' => '#fmimg img@src',
                 'detail_category_rule' => '#wrapper .con_top a:eq(1)@text',
                 'detail_new_chapter_rule' => '#list dl dd:eq(0) a@text',
-                'detail_description_rule' => '#intro p:eq(0)@html',
+                'detail_description_rule' => '#intro@html@-p:eq(2)',
 
-                'chapter_rule' => '#list',
-                'chapter_name_rule' => 'dt:eq(1)~dd@text',
-                'chapter_url_rule' => 'dt:eq(1)~dd@href',
+                'chapter_rule' => '#list dd:gt(8)',
+                'chapter_name_rule' => 'a@text',
+                'chapter_url_rule' => 'a@href',
 
                 'content_name_rule' => '.bookname h1@text',
                 'content_text_rule' => '#content@html',

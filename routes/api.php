@@ -19,6 +19,8 @@ Route::prefix('v1')
     ->name('api.v1.')
     ->group(function() {
 
-    Route::get('books/search', 'BooksController@search')->name('books.search');
+        Route::get('books/search', 'BooksController@search')->name('books.search');
+        Route::get('books/detail', 'BooksController@detail')->name('books.detail');
+        Route::get('books/chapter', 'BooksController@chapter')->name('books.chapter');
 
 });

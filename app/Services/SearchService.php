@@ -4,8 +4,9 @@ namespace App\Services;
 
 
 use App\Models\BookSource;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\LazyCollection;
-use QL\QueryList;
 
 class SearchService
 {
@@ -25,13 +26,13 @@ class SearchService
 
     /**
      * 获取书源
-     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     * @return Builder[]|Collection
      */
     public function getSourceList()
     {
         return BookSource::query()
             ->where('status', true)
-            ->paginate();
+            ->get();
     }
 
     /**
@@ -43,12 +44,13 @@ class SearchService
     {
         return LazyCollection::make(function () use ($searchKey) {
            $sourceList = $this->getSourceList();
+           $queryService = new QueryService();
 
            foreach ($sourceList as $source) {
                $searchURL = $this->getSearchURL($source->search_url, $searchKey);
-               $rules = $this->formatRule($source);
+               $rules = $queryService->getSearchRule($source);
 
-               yield $this->getQueryList($searchURL, $rules, $source->search_rule);
+               yield $queryService->getQueryList($searchURL, $rules, $source->search_rule, $source->url);
            }
         });
     }
@@ -63,47 +65,5 @@ class SearchService
     public function getSearchURL(string $string, string $searchKey, string $search = '[searchKey]')
     {
         return str_replace($search, $searchKey, $string);
-    }
-
-    /**
-     * 获取爬取结果
-     * @param string $searchURL
-     * @param array $rules
-     * @param string $range
-     * @return array
-     */
-    public function getQueryList(string $searchURL, array $rules, string $range = '')
-    {
-        $ql = QueryList::get($searchURL)
-        ->encoding('UTF-8')
-        ->removeHead()
-        ->rules($rules);
-
-        if ($range) {
-            $ql->range($range);
-        }
-
-        return $ql->queryData();
-    }
-
-    /**
-     * 格式化抓取规则
-     * @param $item
-     * @return array
-     */
-    public function formatRule(&$item)
-    {
-        $formatter = function ($value) {
-            return $value ? explode('@', $value) : ['', ''];
-        };
-
-        return [
-            'name' => $formatter($item->search_name_rule),
-            'author' => $formatter($item->search_author_rule),
-            'cover' => $formatter($item->search_cover_rule),
-            'category' => $formatter($item->search_category_rule),
-            'new_chapter' => $formatter($item->search_new_chapter_rule),
-            'url' => $formatter($item->search_url_rule)
-        ];
     }
 }

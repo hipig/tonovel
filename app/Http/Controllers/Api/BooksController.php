@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\BookSource;
+use App\Services\ContentService;
 use App\Services\DetailService;
 use App\Services\QueryService;
 use App\Services\SearchService;
@@ -34,6 +35,16 @@ class BooksController extends Controller
         $sourceKey = 'kuxiaoshuo';
 
         $results = $detailService->getChapterList($sourceKey, $detailURL);
+
+        dd($results);
+    }
+
+    public function read(Request $request, ContentService $contentService)
+    {
+        $contentURL = 'https://www.kuxiaoshuo.com/4_4456/164366317.html';
+        $sourceKey = 'kuxiaoshuo';
+
+        $results = $contentService->getContent($sourceKey, $contentURL);
 
         dd($results);
     }

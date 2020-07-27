@@ -22,5 +22,5 @@ Route::prefix('v1')
         Route::get('books/search', 'BooksController@search')->name('books.search');
         Route::get('books/detail', 'BooksController@detail')->name('books.detail');
         Route::get('books/chapter', 'BooksController@chapter')->name('books.chapter');
-
+        Route::get('books/read', 'BooksController@read')->name('books.read');
 });

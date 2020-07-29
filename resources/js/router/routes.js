@@ -3,6 +3,7 @@ import BlankLayout from '@/layout/BlankLayout'
 
 import Home from '@/views/Home'
 import BookSearch from '@/views/book/Search'
+import BookDetail from '@/views/book/Detail'
 
 export default [
   {
@@ -19,13 +20,18 @@ export default [
   },
   {
     path: '/book',
-    name: 'blank',
+    name: 'book',
     component: MainLayout,
     children: [
       {
         path: 'search',
         name: 'book.search',
         component: BookSearch
+      },
+      {
+        path: 'detail',
+        name: 'book.detail',
+        component: BookDetail
       }
     ]
   }

@@ -249,6 +249,130 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Home',
+  computed: {
+    searchValue: {
+      get: function get() {
+        return this.$store.getters['search/value'];
+      },
+      set: function set(value) {
+        this.updateValue(value);
+      }
+    }
+  },
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])({
+    'updateValue': 'search/updateValue'
+  })), {}, {
+    search: function search() {
+      var keywords = this.searchValue;
+
+      if (keywords !== '') {
+        this.$router.push({
+          name: 'book.search',
+          query: {
+            keywords: keywords
+          }
+        });
+      }
+    }
+  })
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/book/Detail.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/book/Detail.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -274,25 +398,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      searchValue: ''
-    };
-  },
-  methods: {
-    search: function search() {
-      var keywords = this.searchValue;
-
-      if (keywords !== '') {
-        this.$router.push({
-          name: 'book.search',
-          query: {
-            keywords: keywords
-          }
-        });
-      }
-    }
-  }
+  name: "Detail"
 });
 
 /***/ }),
@@ -306,13 +412,138 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'BookSearch',
+  computed: {
+    searchValue: {
+      get: function get() {
+        return this.$store.getters['search/value'];
+      },
+      set: function set(value) {
+        this.updateValue(value);
+      }
+    }
+  },
+  created: function created() {
+    console.log(this.$store.getters['search/value']);
+  },
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])({
+    'updateValue': 'search/updateValue'
+  })), {}, {
+    search: function search() {
+      var keywords = this.searchValue;
+
+      if (keywords !== '') {
+        this.$router.push({
+          name: 'book.search',
+          query: {
+            keywords: keywords
+          }
+        });
+      }
+    }
+  })
+});
 
 /***/ }),
 
@@ -2255,7 +2486,7 @@ var render = function() {
               }
             ],
             staticClass:
-              "appearance-none block w-full py-3 px-4 leading-none sm:leading-normal border border-gray-100 placeholder-gray-500 rounded-lg focus:outline-none focus:shadow-outline-blue focus:z-10 sm:px-5 text-sm sm:text-lg",
+              "appearance-none block w-full py-3 px-4 leading-none sm:leading-normal border-2 border-transparent placeholder-gray-500 rounded-lg focus:outline-none focus:border-gray-400 focus:shadow-outline-gray focus:z-10 sm:px-5 text-sm sm:text-lg",
             attrs: { type: "text", placeholder: "请输入小说名称..." },
             domProps: { value: _vm.searchValue },
             on: {
@@ -2282,7 +2513,7 @@ var render = function() {
           "button",
           {
             staticClass:
-              "inline-flex items-center px-4 border border-transparent font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-gray-900 active:bg-gray-900 focus:shadow-outline-gray transition duration-150 ease-in-out py-3 sm:px-6 leading-none sm:leading-normal text-sm sm:text-lg",
+              "inline-flex items-center px-4 border-2 border-transparent font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-gray-900 active:bg-gray-900 focus:shadow-outline-gray transition duration-150 ease-in-out py-3 sm:px-6 leading-none sm:leading-normal text-sm sm:text-lg",
             on: { click: _vm.search }
           },
           [
@@ -2340,6 +2571,370 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/book/Detail.vue?vue&type=template&id=5ee5a6a8&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/book/Detail.vue?vue&type=template&id=5ee5a6a8& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "bg-white px-4 pt-6 pb-4 shadow-sm z-20 relative" },
+      [
+        _c("div", { staticClass: "max-w-6xl mx-auto" }, [
+          _c("div", { staticClass: "flex" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex-1" }, [
+              _c("div", { staticClass: "flex" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "px-4 flex md:flex-col items-center justify-center mt-4 md:mt-0 w-full sm:w-64"
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "inline-flex w-full mb-2 items-center justify-center border border-transparent font-medium rounded-full text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-gray-900 active:bg-gray-900 focus:shadow-outline-gray transition duration-150 ease-in-out px-4 py-2 leading-none sm:leading-normal",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("加入书架")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "inline-flex w-full items-center justify-center border-2 border-gray-300 font-medium rounded-full bg-transparent hover:text-gray-600 focus:outline-none focus:border-gray-400 focus:shadow-outline-gray transition duration-150 ease-in-out px-4 py-2 leading-none sm:leading-normal",
+                        attrs: { type: "button" }
+                      },
+                      [
+                        _c("span", [_vm._v("换源")]),
+                        _vm._v(" "),
+                        _c(
+                          "svg",
+                          {
+                            staticClass:
+                              "stroke-current w-6 h-6 ml-3 text-gray-400",
+                            attrs: {
+                              fill: "none",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                              "stroke-width": "2",
+                              viewBox: "0 0 24 24"
+                            }
+                          },
+                          [
+                            _c("path", {
+                              attrs: {
+                                d:
+                                  "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _vm._m(2)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-4" }, [
+      _c("img", {
+        staticClass: "object-contain w-36 bg-gray-100 rounded-lg border p-1",
+        attrs: {
+          src: "http://r.m.kuxiaoshuo.com/files/article/image/4/4456/4456s.jpg",
+          alt: "Cover"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex-1 px-4" }, [
+      _c(
+        "h2",
+        {
+          staticClass:
+            "inline-block mb-2 text-2xl md:text-3xl text-gray-700 font-bold leading-tight"
+        },
+        [_vm._v("大主宰")]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-4 text-base text-gray-600 leading-normal" },
+        [
+          _vm._v(
+            "\n                第一千三十二章 七阳截天杖\n                "
+          ),
+          _c("span", { staticClass: "mx-2 text-gray-400" }, [_vm._v("•")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "border-b-2 inline-flex text-gray-800 border-gray-200 hover:text-gray-900 hover:border-gray-400",
+              attrs: { href: "#" }
+            },
+            [_vm._v("天蚕土豆")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "mb-2 text-gray-500 text-sm" }, [
+        _c("p", [
+          _vm._v(
+            "大千世界，位面交汇，万族林立，群雄荟萃，一位位来自下位面的天之至尊，在这无尽世界，演绎着令人向往的传奇，追求着那主宰之路。"
+          ),
+          _c("br"),
+          _vm._v("无尽火域，炎帝执掌，万火焚苍穹。"),
+          _c("br"),
+          _vm._v("武境之内，武祖之威，震慑乾坤。"),
+          _c("br"),
+          _vm._v("西天之殿，百战之皇，战威无可敌。"),
+          _c("br"),
+          _vm._v("北荒之丘，万墓之地，不死之主镇天地。"),
+          _c("br"),
+          _vm._v("......"),
+          _c("br"),
+          _vm._v(
+            "少年自北灵境而出，骑九幽冥雀，闯向了那精彩绝伦的纷纭世界，主宰之路，谁主沉浮？"
+          ),
+          _c("br"),
+          _vm._v("大千世界，万道争锋，吾为大主宰。"),
+          _c("br")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "py-10 px-4" }, [
+      _c("div", { staticClass: "max-w-6xl mx-auto" }, [
+        _c("div", { staticClass: "flex" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "shadow w-full rounded-lg bg-white overflow-hidden w-full block mb-10 pb-5 flex-1"
+            },
+            [
+              _c("div", { staticClass: "px-8 py-6" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "text-xl md:text-2xl text-gray-700 font-bold leading-tight mb-4"
+                  },
+                  [_vm._v("章节列表")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "flex flex-wrap w-full border-t border-dashed"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "flex w-full sm:w-1/3 border-b border-dashed"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-sm hover:text-gray-800 hover:underline py-2",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("第一章武破虚空！")]
+                        )
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/book/Search.vue?vue&type=template&id=7251707f&":
 /*!*********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/book/Search.vue?vue&type=template&id=7251707f& ***!
@@ -2355,9 +2950,409 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  111\n")])
+  return _c("div", { staticClass: "py-10 px-4" }, [
+    _c("div", { staticClass: "max-w-6xl mx-auto" }, [
+      _c("div", { staticClass: "md:flex -mx-4" }, [
+        _c("div", { staticClass: "md:w-3/4 px-4" }, [
+          _c("div", { staticClass: "flex items-center mb-4" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchValue,
+                  expression: "searchValue"
+                }
+              ],
+              staticClass:
+                "px-4 py-2 leading-normal block w-full text-gray-800 bg-white text-left appearance-none outline-none rounded-lg border-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:shadow-outline-gray",
+              attrs: { placeholder: "请输入小说名称..." },
+              domProps: { value: _vm.searchValue },
+              on: {
+                keyup: function($event) {
+                  if (
+                    !$event.type.indexOf("key") &&
+                    _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                  ) {
+                    return null
+                  }
+                  return _vm.search($event)
+                },
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.searchValue = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "shadow w-full rounded-lg bg-white overflow-hidden w-full block mb-4 relative cursor-pointer"
+              },
+              [
+                _c("div", { staticClass: "px-6 py-4 sm:px-6 sm:py-5" }, [
+                  _c("div", { staticClass: "flex" }, [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex-1" }, [
+                      _c("div", { staticClass: "md:flex" }, [
+                        _vm._m(1),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "md:w-48 flex-col justify-between mt-1 hidden sm:block"
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "mb-1 md:flex-1 flex items-center"
+                              },
+                              [
+                                _c(
+                                  "svg",
+                                  {
+                                    staticClass:
+                                      "stroke-current w-6 h-6 mr-2 text-gray-400",
+                                    attrs: {
+                                      fill: "none",
+                                      viewBox: "0 0 24 24",
+                                      "stroke-linecap": "round",
+                                      "stroke-linejoin": "round",
+                                      "stroke-width": "2"
+                                    }
+                                  },
+                                  [
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "p",
+                                  {
+                                    staticClass:
+                                      "text-sm text-gray-600 leading-normal"
+                                  },
+                                  [_vm._v("54K")]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "mb-1 md:flex-1 flex items-center"
+                              },
+                              [
+                                _c(
+                                  "svg",
+                                  {
+                                    staticClass:
+                                      "stroke-current w-6 h-6 mr-2 text-gray-400",
+                                    attrs: {
+                                      fill: "none",
+                                      viewBox: "0 0 24 24"
+                                    }
+                                  },
+                                  [
+                                    _c("path", {
+                                      attrs: {
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        "stroke-width": "2",
+                                        d:
+                                          "M9 8l3 5m0 0l3-5m-3 5v4m-3-5h6m-6 3h6m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "p",
+                                  {
+                                    staticClass:
+                                      "text-sm text-gray-600 leading-normal"
+                                  },
+                                  [_vm._v("连载中")]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "mb-1 md:flex-1 flex items-center"
+                              },
+                              [
+                                _c(
+                                  "svg",
+                                  {
+                                    staticClass:
+                                      "stroke-current w-6 h-6 mr-2 text-gray-400",
+                                    attrs: {
+                                      fill: "none",
+                                      viewBox: "0 0 24 24"
+                                    }
+                                  },
+                                  [
+                                    _c("path", {
+                                      attrs: {
+                                        "stroke-linecap": "round",
+                                        "stroke-linejoin": "round",
+                                        "stroke-width": "2",
+                                        d:
+                                          "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "p",
+                                  {
+                                    staticClass:
+                                      "text-sm text-gray-600 leading-normal"
+                                  },
+                                  [_vm._v("2017-09-15")]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "md:w-1/4 px-4 pt-5 md:pt-16" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "shadow w-full rounded-lg bg-white overflow-hidden w-full block mb-5 relative bg-orange-100 px-5 py-5"
+            },
+            [
+              _c("div", { staticClass: "flex items-center mb-3" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "p-2 mr-2 leading-normal bg-orange-200 text-orange-800 flex justify-center items-center rounded-full"
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "stroke-current w-5 h-5",
+                        attrs: { fill: "none", viewBox: "0 0 24 24" }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h2",
+                  {
+                    staticClass:
+                      "leading-tight text-gray-700 font-semibold text-gray-600 leading-normal"
+                  },
+                  [_vm._v("没有找到？")]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "text-base text-gray-600 leading-normal" },
+                [_vm._v("找不到您想看的小说？")]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "mb-5 text-base text-gray-600 leading-normal" },
+                [_vm._v("自己制作书源!")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "shadow bg-white hover:shadow-md text-gray-700 inline-flex items-center justify-center font-medium focus:outline-none rounded-lg px-4 py-2",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("制作书源")]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "shadow w-full rounded-lg bg-white overflow-hidden w-full block mb-5 relative bg-teal-100 px-5 py-5"
+            },
+            [
+              _c("div", { staticClass: "flex items-center mb-3" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "p-2 mr-2 leading-normal bg-teal-200 text-teal-800 flex justify-center items-center rounded-full"
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "stroke-current w-5 h-5",
+                        attrs: { fill: "none", viewBox: "0 0 24 24" }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            "stroke-width": "2",
+                            d:
+                              "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h2",
+                  {
+                    staticClass:
+                      "leading-tight text-gray-700 text-xl font-semibold text-base text-gray-600 leading-normal"
+                  },
+                  [_vm._v("联系我们")]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "mb-5 text-base text-gray-600 leading-normal" },
+                [_vm._v("需要优化，请提出您宝贵的建议。")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "shadow bg-white hover:shadow-md text-gray-700 inline-flex items-center justify-center font-medium focus:outline-none rounded-lg px-4 py-2",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("问题反馈")]
+              )
+            ]
+          )
+        ])
+      ])
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mr-5" }, [
+      _c("img", {
+        staticClass: "object-contain w-24 bg-gray-100 rounded-lg border p-1",
+        attrs: {
+          src: "http://r.m.kuxiaoshuo.com/files/article/image/4/4456/4456s.jpg",
+          alt: "Cover"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex-1" }, [
+      _c("div", { staticClass: "mb-2 sm:mb-1 pr-3" }, [
+        _c(
+          "a",
+          {
+            staticClass:
+              "inline-block text-2xl text-gray-700 font-semibold leading-normal",
+            attrs: { href: "#" }
+          },
+          [
+            _vm._v(
+              "\n                          大主宰\n                        "
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mb-2 sm:mb-1 leading-normal flex items-center" },
+        [
+          _c("div", { staticClass: "text-gray-600 hidden sm:block" }, [
+            _vm._v("作者：")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "text-gray-500" }, [_vm._v("天蚕土豆")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "mb-2 sm:mb-1 inline-block leading-normal flex items-center"
+        },
+        [
+          _c("div", { staticClass: "text-gray-600 hidden sm:block" }, [
+            _vm._v("最新章节：")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "text-gray-500 truncate" }, [
+            _vm._v("第一千三十二章 七阳截天杖")
+          ])
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -19269,6 +20264,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout_BlankLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/layout/BlankLayout */ "./resources/js/layout/BlankLayout.vue");
 /* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/views/Home */ "./resources/js/views/Home.vue");
 /* harmony import */ var _views_book_Search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/views/book/Search */ "./resources/js/views/book/Search.vue");
+/* harmony import */ var _views_book_Detail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/views/book/Detail */ "./resources/js/views/book/Detail.vue");
+
 
 
 
@@ -19284,12 +20281,16 @@ __webpack_require__.r(__webpack_exports__);
   }]
 }, {
   path: '/book',
-  name: 'blank',
+  name: 'book',
   component: _layout_MainLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
   children: [{
     path: 'search',
     name: 'book.search',
     component: _views_book_Search__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    path: 'detail',
+    name: 'book.detail',
+    component: _views_book_Detail__WEBPACK_IMPORTED_MODULE_4__["default"]
   }]
 }]);
 
@@ -19355,17 +20356,91 @@ var modules = requireContext.keys().map(function (file) {
   !*** ./resources/js/store/modules sync nonrecursive .*\.js$ ***!
   \**************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyContext(req) {
-	var e = new Error("Cannot find module '" + req + "'");
-	e.code = 'MODULE_NOT_FOUND';
-	throw e;
+var map = {
+	"./search.js": "./resources/js/store/modules/search.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
 }
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = "./resources/js/store/modules sync .*\\.js$";
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js/store/modules sync .*\\.js$";
+
+/***/ }),
+
+/***/ "./resources/js/store/modules/search.js":
+/*!**********************************************!*\
+  !*** ./resources/js/store/modules/search.js ***!
+  \**********************************************/
+/*! exports provided: state, getters, mutations, actions */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "state", function() { return state; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getters", function() { return getters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mutations", function() { return mutations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actions", function() { return actions; });
+/* harmony import */ var _mutation_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mutation-types */ "./resources/js/store/mutation-types.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+ // state
+
+var state = {
+  value: ''
+}; // getters
+
+var getters = {
+  value: function value(state) {
+    return state.value;
+  }
+}; // mutations
+
+var mutations = _defineProperty({}, _mutation_types__WEBPACK_IMPORTED_MODULE_0__["UPDATE_SEARCH_VALUE"], function (state, value) {
+  state.value = value;
+}); // actions
+
+var actions = {
+  updateValue: function updateValue(_ref, value) {
+    var commit = _ref.commit;
+    commit('UPDATE_SEARCH_VALUE', value);
+  },
+  clearValue: function clearValue(_ref2) {
+    var commit = _ref2.commit;
+    commit('UPDATE_SEARCH_VALUE', '');
+  }
+};
+
+/***/ }),
+
+/***/ "./resources/js/store/mutation-types.js":
+/*!**********************************************!*\
+  !*** ./resources/js/store/mutation-types.js ***!
+  \**********************************************/
+/*! exports provided: UPDATE_SEARCH_VALUE */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UPDATE_SEARCH_VALUE", function() { return UPDATE_SEARCH_VALUE; });
+// search
+var UPDATE_SEARCH_VALUE = 'UPDATE_SEARCH_VALUE';
 
 /***/ }),
 
@@ -19433,6 +20508,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_63cd6604___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_63cd6604___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/views/book/Detail.vue":
+/*!********************************************!*\
+  !*** ./resources/js/views/book/Detail.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Detail_vue_vue_type_template_id_5ee5a6a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Detail.vue?vue&type=template&id=5ee5a6a8& */ "./resources/js/views/book/Detail.vue?vue&type=template&id=5ee5a6a8&");
+/* harmony import */ var _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Detail.vue?vue&type=script&lang=js& */ "./resources/js/views/book/Detail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Detail_vue_vue_type_template_id_5ee5a6a8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Detail_vue_vue_type_template_id_5ee5a6a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/views/book/Detail.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/views/book/Detail.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/views/book/Detail.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/book/Detail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/views/book/Detail.vue?vue&type=template&id=5ee5a6a8&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/views/book/Detail.vue?vue&type=template&id=5ee5a6a8& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_5ee5a6a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Detail.vue?vue&type=template&id=5ee5a6a8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/book/Detail.vue?vue&type=template&id=5ee5a6a8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_5ee5a6a8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Detail_vue_vue_type_template_id_5ee5a6a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
